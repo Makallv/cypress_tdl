@@ -22,6 +22,12 @@ class LoginPage{
     static get errorMessage(){
         return cy.get('[data-test="error"]');
     }
+
+    static loginToPage(username, password){
+        this.username.type(username);
+        this.password.type(password);
+        this.loginButton.click();
+    }
 }
 
 export default LoginPage;

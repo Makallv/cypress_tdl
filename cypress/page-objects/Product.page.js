@@ -25,6 +25,14 @@ class ProductPage {
         return cy.get(".shopping_cart_badge");
     }
 
+    static get removeButton() {
+        return cy.get(".btn_secondary");
+    }
+
+    static get sauceLabBackpack() {
+        return cy.get('.inventory_item_name').contains('Sauce Labs Backpack');
+    }
+
 }
 
 export default ProductPage;
